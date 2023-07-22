@@ -7,10 +7,10 @@ import com.pgyer.pgyersdk.PgyerSDKManager
 class PgyerAppLifecycle : ApplicationLifecycleCallbacks {
 
     override fun attachBaseContext(base: Context) {
+        PgyerSDKManager.Init().setContext(base).start()
     }
 
     override fun onCreate(application: Application) {
-        PgyerSDKManager.Init().setContext(application).start()
     }
 
     override fun onTerminate(application: Application) {
