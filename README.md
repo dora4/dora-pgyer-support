@@ -14,7 +14,7 @@ allprojects {
 // 添加以下代码到app模块的build.gradle
 dependencies {
     // 扩展包必须在有主框架dora的情况下使用
-    implementation 'com.github.dora4:dora:1.1.12'
+    implementation 'com.github.dora4:dora:1.1.25'
     implementation 'com.github.dora4:dora-pgyer-support:1.2'
 }
 ```
