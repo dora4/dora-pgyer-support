@@ -58,10 +58,3 @@ dependencies {
             downloadUrl: String) {
         }
 
-        override fun onLatestVersion() {
-        }
-    
-        override fun onError(msg: String) {
-        }
-    })
-```
