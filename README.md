@@ -48,7 +48,7 @@ dependencies {
 
 检测版本更新（1.7版本新增）。
 ```kotlin
-    // 检测蒲公英的版本更新
+    // 检测蒲公英的版本更新，apiKey对应PGYER_API_KEY，appKey对应PGYER_FRONTJS_KEY
     PgyVersionUpdate.checkVersion(context, apiKey, appKey, object : PgyVersionUpdate.UpdateListener {
         override fun onUpdate(
             versionCode: Int,
