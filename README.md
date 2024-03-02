@@ -46,7 +46,7 @@ dependencies {
 </application>
 ```
 
-检测版本更新。
+检测版本更新（1.7版本新增）。
 ```kotlin
     // 检测蒲公英的版本更新
     PgyVersionUpdate.checkVersion(context, apiKey, appKey, object : PgyVersionUpdate.UpdateListener {
