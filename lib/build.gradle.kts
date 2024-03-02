@@ -27,7 +27,10 @@ android {
 dependencies {
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("com.github.dora4:dora:1.1.46")
+    implementation("com.github.dora4:dora:1.1.62")
+    implementation("com.github.dora4:dcache-android:2.2.10")
+    implementation("com.github.dora4:dview-loading-dialog:1.5")
+
     api("com.pgyer:analytics:4.3.3")
 }
 
@@ -38,7 +41,7 @@ afterEvaluate {
                 from(components["release"])
                 groupId = "com.github.dora4"
                 artifactId = "dora-pgyer-support"
-                version = "1.5"
+                version = "1.7"
             }
         }
     }
