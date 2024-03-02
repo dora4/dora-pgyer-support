@@ -14,8 +14,12 @@ allprojects {
 // 添加以下代码到app模块的build.gradle
 dependencies {
      // 扩展包必须在有主框架dora的情况下使用
-    implementation 'com.github.dora4:dora:1.1.61'
-    implementation 'com.github.dora4:dora-pgyer-support:1.5'
+    implementation 'com.github.dora4:dora:1.1.62'
+    implementation 'com.github.dora4:dora-pgyer-support:1.6'
+    // 1.6版本开始需要依赖dcache-android
+    implementation 'com.github.dora4:dcache-android:2.2.10'
+    // 1.6版本开始需要依赖dview-loading-dialog
+    implementation 'com.github.dora4:dview-loading-dialog:1.5'
 }
 ```
 
@@ -40,4 +44,24 @@ dependencies {
             android:name="PGYER_FEATURE_CHECK_UNPDATE"
             android:value="true" />
 </application>
+```
 
+检测版本更新。
+```kotlin
+    // 检测蒲公英的版本更新
+    PgyVersionUpdate.checkVersion(context, apiKey, appKey, object : PgyVersionUpdate.UpdateListener {
+        override fun onUpdate(
+            versionCode: Int,
+            versionName: String,
+            isForceUpdate: Boolean,
+            updateLog: String,
+            downloadUrl: String) {
+        }
+
+        override fun onLatestVersion() {
+        }
+    
+        override fun onError(msg: String) {
+        }
+    })
+```
