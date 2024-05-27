@@ -41,7 +41,7 @@ dependencies {
             android:name="PGYER_FRONTJS_KEY"
             android:value="改成你的蒲公英的SDK Token" />
         <meta-data
-            android:name="PGYER_FEATURE_CHECK_UNPDATE"
+            android:name="PGYER_FEATURE_CHECK_UPDATE"
             android:value="true" />
 </application>
 ```
