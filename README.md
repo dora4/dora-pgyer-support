@@ -2,7 +2,18 @@ dora-pgyer-support
 ![Release](https://jitpack.io/v/dora4/dora-pgyer-support.svg)
 --------------------------------
 
-#### gradle依赖配置
+#### 依赖仓库配置
+
+```kts
+dependencyResolutionManagement {
+    repositories {
+        // 蒲公英的仓库
+        maven { setUrl("https://frontjs-static.pgyer.com/dist/sdk/pgyersdk") }
+    }
+}
+```
+
+#### Gradle依赖配置
 
 ```groovy
 // 添加以下代码到项目根目录下的build.gradle
