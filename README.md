@@ -26,9 +26,9 @@ allprojects {
 dependencies {
      // 扩展包必须在有主框架dora的情况下使用
     implementation 'com.github.dora4:dora:1.3.14'
-    implementation 'com.github.dora4:dora-pgyer-support:1.8'
+    implementation 'com.github.dora4:dora-pgyer-support:1.9'
     // 1.7版本开始需要依赖dcache-android
-    implementation 'com.github.dora4:dcache-android:2.3.1'
+    implementation 'com.github.dora4:dcache-android:3.4.6'
     // 1.7版本开始需要依赖dview-loading-dialog
     implementation 'com.github.dora4:dview-loading-dialog:1.5'
 }
