@@ -3,7 +3,6 @@ pluginManagement {
         gradlePluginPortal()
         google()
         mavenCentral()
-        maven { url "https://maven.aliyun.com/repository/jcenter" }
     }
 
     resolutionStrategy {
@@ -12,7 +11,7 @@ pluginManagement {
                 useModule("com.github.dcendents:android-maven-gradle-plugin:1.5")
             }
             if (requested.id.namespace == "org.jetbrains.kotlin") {
-                def kotlin_version = "1.8.10"
+                def kotlin_version = "2.2.21"
                 useModule("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version")
             }
         }
@@ -24,7 +23,6 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
         maven { url "https://jitpack.io" }
-        maven { url "https://maven.aliyun.com/repository/jcenter" }
         maven { url "https://frontjs-static.pgyer.com/dist/sdk/pgyersdk" }
     }
 }

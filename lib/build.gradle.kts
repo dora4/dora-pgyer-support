@@ -19,18 +19,16 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
 }
 
 dependencies {
-    implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("com.github.dora4:dora:1.3.14")
-    implementation("com.github.dora4:dcache-android:3.4.6")
+    implementation("androidx.appcompat:appcompat:1.7.1")
+    implementation("com.github.dora4:dora:1.3.40")
+    implementation("com.github.dora4:dcache-android:3.5.7")
     implementation("com.github.dora4:dview-loading-dialog:1.5")
-
-    api("com.pgyer:analytics:4.3.3")
 }
 
 afterEvaluate {
@@ -40,7 +38,7 @@ afterEvaluate {
                 from(components["release"])
                 groupId = "com.github.dora4"
                 artifactId = "dora-pgyer-support"
-                version = "1.9"
+                version = "1.10"
             }
         }
     }

@@ -2,7 +2,6 @@ package dora.lifecycle.application
 
 import android.app.Application
 import android.content.Context
-import com.pgyer.pgyersdk.PgyerSDKManager
 import dora.http.log.FormatLogInterceptor
 import dora.http.retrofit.RetrofitManager
 import dora.pgyer.PgyService
@@ -24,7 +23,6 @@ class PgyerAppLifecycle : ApplicationLifecycleCallbacks {
     }
 
     override fun onCreate(application: Application) {
-        PgyerSDKManager.Init().setContext(application).start()
     }
 
     override fun onTerminate(application: Application) {
