@@ -25,10 +25,10 @@ allprojects {
 // 添加以下代码到app模块的build.gradle
 dependencies {
      // 扩展包必须在有主框架dora的情况下使用
-    implementation 'com.github.dora4:dora:1.3.14'
-    implementation 'com.github.dora4:dora-pgyer-support:1.9'
+    implementation 'com.github.dora4:dora:1.3.53'
+    implementation 'com.github.dora4:dora-pgyer-support:1.11'
     // 1.7版本开始需要依赖dcache-android
-    implementation 'com.github.dora4:dcache-android:3.4.6'
+    implementation 'com.github.dora4:dcache-android:3.5.7'
     // 1.7版本开始需要依赖dview-loading-dialog
     implementation 'com.github.dora4:dview-loading-dialog:1.5'
 }
